@@ -1,14 +1,18 @@
 package com.java.CompletableFutrue;
 
 import java.util.List;
-import java.util.concurrent.*;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
+/**
+ * Callable은 결과값을 리턴받을 수 있음<p>
+ * 리턴 받은 값이 Future<p>
+ */
 public class _CallableAndFuture {
+
   public static void main(String[] args) throws ExecutionException, InterruptedException {
-    /**
-     * Callable은 결과값을 리턴받을 수 있음
-     * 리턴 받은 값이 Future
-     */
     ExecutorService executorService = Executors.newFixedThreadPool(3);
 
     Callable<String> jaehoon = () -> {

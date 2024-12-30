@@ -1,14 +1,11 @@
 package com.java.CompletableFutrue;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
 public class _CompletableFuture02 {
-  public static void main(String[] args) throws ExecutionException, InterruptedException {
 
+  public static void main(String[] args) throws ExecutionException, InterruptedException {
     //   // CompletableFuture 2개가 연관이 있는 경우
     //   // 1
     //   CompletableFuture<String> hello = CompletableFuture.supplyAsync(() -> {
