@@ -10,10 +10,10 @@ public class _ScheduledExecutor {
   public static void main(String[] args) {
     ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
 
-    // 1초뒤에 실행
+    // TODO: 1초뒤에 실행
     executorService.schedule(getRunnable("Hello"), 1, TimeUnit.SECONDS);
 
-    // 반복해서 실행하려면? 최초 딜레이 2초 뒤 부터 2초간격으로 실행
+    // TODO: 반복해서 실행하려면? 최초 딜레이 2초 뒤 부터 2초간격으로 실행
     ScheduledFuture<?> scheduledTask = executorService.scheduleAtFixedRate(getRunnable("Java"),
                                                                            2,
                                                                            1,

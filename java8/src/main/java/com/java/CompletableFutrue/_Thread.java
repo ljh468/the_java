@@ -3,11 +3,11 @@ package com.java.CompletableFutrue;
 public class _Thread {
 
   public static void main(String[] args) {
-    // 1. 상속을 이용한 쓰레드 생성
+    // TODO: 1. 상속을 이용한 쓰레드 생성
     MyThread myThread = new MyThread();
     myThread.start();
 
-    // 2. 익명 객체를 이용한 쓰레드 생성 (람다 사용가능)
+    // TODO: 2. 익명 객체를 이용한 쓰레드 생성 (람다 사용가능)
     Thread AnonymousThread = new Thread(new Runnable() {
       @Override
       public void run() {
@@ -16,7 +16,7 @@ public class _Thread {
     });
     AnonymousThread.start();
 
-    // 3. Runnable 인터페이스를 이용한 쓰레드 생성
+    // TODO: 3. Runnable 인터페이스를 이용한 쓰레드 생성
     MyRunnable myRunnable = new MyRunnable();
     myRunnable.run();
 
